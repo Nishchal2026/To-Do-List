@@ -12,7 +12,8 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right , rgba(0, 26, 255, 0.349) , rgba(0, 0, 255, 0.32)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6C1urZWqbidXrDYGgRLHVPZMfUDH-Yzra9Q&s");
+    /* background-image: linear-gradient(to right , rgba(0, 26, 255, 0.197) , rgba(0, 0, 255, 0.32)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6C1urZWqbidXrDYGgRLHVPZMfUDH-Yzra9Q&s"); */
+    background-image: linear-gradient(to right , rgba(0, 26, 255, 0.197) , rgba(0, 0, 255, 0.17)),url("https://t4.ftcdn.net/jpg/06/76/92/39/360_F_676923915_Q1RDnjyTxW9IeEdybJk1FF1SeURzI3eg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -175,6 +176,7 @@ margin-left: 5rem;
 
 .todo-input{
     font-size: 2rem;
+    color: greenyellow;
     /* background:blue ; */
     /* background-color:  ; */
     background: transparent;
@@ -218,6 +220,8 @@ margin-left: 5rem;
 
 .cross{
     text-decoration:line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.3rem;
 }
 
 button{

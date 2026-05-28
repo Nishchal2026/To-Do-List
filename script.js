@@ -76,8 +76,14 @@ const addTodo = (inputValue) => {
     deleteBtn.addEventListener("click" , () => {
         List.remove()
         taskAdded--
+        taskCount.innerText = taskAdded
+
         updateTaskCount()
         updateProgress()
+        if(taskCount.innerText<8){
+            Input.removeAttribute("disabled")
+            Input.focus()
+        }
 
     })
 
@@ -104,8 +110,11 @@ Form.addEventListener("submit" , (event) => {
         return
     }else{
         addTodo(inputValue)
-       
-        console.log(taskAdded);
+        
+    if(taskCount.innerText==8){
+        Input.setAttribute("disabled" , "disabled")
+    }  
+        
         
     }
     
