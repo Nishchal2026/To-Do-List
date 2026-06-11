@@ -11,18 +11,17 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
-    /* background-image: linear-gradient(to right , rgba(0, 26, 255, 0.197) , rgba(0, 0, 255, 0.32)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6C1urZWqbidXrDYGgRLHVPZMfUDH-Yzra9Q&s"); */
+    min-height: 100vh;
+   
     background-image: linear-gradient(to right , rgba(0, 26, 255, 0.197) , rgba(0, 0, 255, 0.17)),url("https://t4.ftcdn.net/jpg/06/76/92/39/360_F_676923915_Q1RDnjyTxW9IeEdybJk1FF1SeURzI3eg.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 main{
     width: 100%;
     height: 100%;
     padding: 2rem;
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
 }
@@ -81,7 +80,7 @@ form{
     width: 100%;
     height: 45rem;
     overflow: hidden;
-    /* background-color: rgba(255, 0, 0, 0.314); */
+ 
     margin-top: 3rem;
 }
 
@@ -177,8 +176,7 @@ margin-left: 5rem;
 .todo-input{
     font-size: 2rem;
     color: greenyellow;
-    /* background:blue ; */
-    /* background-color:  ; */
+   
     background: transparent;
     font-weight: bold;
     border: none;
@@ -236,5 +234,21 @@ button:active{
     box-shadow: 0 0 2rem 1rem red;
 }
 
+ @media (max-width:768px){
 
+    body{
+        height: auto;
+        min-height: 100vh;
+    }
 
+    main{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-div,
+    .right-div{
+        height: auto;
+    }
+}
